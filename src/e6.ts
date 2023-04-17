@@ -1,4 +1,4 @@
-const app = document.getElementById("app")!;
+const app = document.getElementById('app')!;
 
 app.innerHTML = /*html*/ `
 
@@ -12,22 +12,22 @@ app.innerHTML = /*html*/ `
   
   </form>
 <p id="resultado"></p>
-<p id="resultado2"></>
+<p id="resultado2"></p>
 
 `;
 
-const nombre = document.querySelector("#nombre") as HTMLInputElement;
-const resultado = document.querySelector("#resultado") as HTMLParagraphElement;
-const apellido = document.querySelector("#apellido") as HTMLInputElement;
+const nombre = document.querySelector('#nombre') as HTMLInputElement;
+const resultado = document.querySelector('#resultado') as HTMLParagraphElement;
+const apellido = document.querySelector('#apellido') as HTMLInputElement;
 const resultado2 = document.querySelector(
-  "#resultado2"
+  '#resultado2'
 ) as HTMLParagraphElement;
 
-nombre.addEventListener("input", () => {
+nombre.addEventListener('input', () => {
   resultado.textContent = nombre.value;
 });
 
-apellido.addEventListener("input", () => {
+apellido.addEventListener('input', () => {
   resultado2.textContent = apellido.value;
 });
 export {};
